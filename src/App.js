@@ -19,7 +19,7 @@ function App() {
     
       <Display income={income} setIncome={setIncome} expense={expense} setExpense={setExpense} total={total} setTotal={setTotal} inc={inc} exp={exp}/>
       <Input inc={inc} setInc={setInc} exp={exp} setExp={setExp}/>
-      <List/>
+      <List inc={inc} setInc={setInc} exp={exp} setExp={setExp}/>
 
     </div>
   );
