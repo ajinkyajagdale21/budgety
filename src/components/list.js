@@ -12,11 +12,11 @@ function List({inc,setInc,exp,setExp})
     
     return(
         <div>
+              <h2>income</h2>
             {
                  inc.map( income => (
                     
                     <div>
-           
                         <div >
                         {income.description}
                         </div>
@@ -26,14 +26,15 @@ function List({inc,setInc,exp,setExp})
                         </div>
            
                         <div >
-                        <button onClick = {IncdeleteHandler}>delete</button>
+                         <button onClick = {IncdeleteHandler}  key={income.id}>delete</button>
                         </div>           
-           
+                     
                     </div>
           ))}
-            
-        
+           
+             <h2>expense </h2>
             { 
+        
                 exp.map( expense => (
             <div>
             
@@ -46,7 +47,7 @@ function List({inc,setInc,exp,setExp})
                 </div>
             
                 <div >
-                    <button onClick = {ExpdeleteHandler} >delete</button> 
+                    <button onClick = {ExpdeleteHandler}  >delete</button> 
                 </div>
             </div>
             
